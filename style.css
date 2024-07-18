@@ -1,0 +1,553 @@
+/*---SPECIAL---*/
+@font-face {
+    font-family:good-times;
+    src: url("../MYGames/Res/Fonts/good-times.otf");
+}
+
+:root{
+    scroll-behavior: smooth;
+
+}
+body{
+    background: rgb(231, 227, 227);
+    overflow-x: hidden;
+}
+*{
+    margin:0;
+}
+header{
+ background-image: linear-gradient(130deg,black 70%,rgb(119, 8, 8));
+}
+  #header-main-div{
+    
+    margin:0;
+    height:50vh;
+    color:white;
+   
+    background-color: black;
+    background-image: linear-gradient(transparent 30%,black, transparent),url("https://a.top4top.io/p_2197c5pwe8.jpg");
+    background-size: 30%;
+    background-position: 10% 80%;
+    background-repeat: no-repeat;
+    
+    clip-path:polygon(0 0, 100% 0, 70% 100%,0 100% );
+  }
+   #logo-home-btn{
+       float:left;
+       width:fit-content;
+       margin: 2vw 0 0 1vw;
+
+   }
+    #big-logo{
+       width:3vw;
+       height:3vw;
+       border-radius: 50%;
+    }
+    #nav-btn-cover{
+        width: 50vw;
+        position: absolute;
+        left:40vw;
+        top:2vh;
+    }
+       #nav-btn-cover ul{
+           list-style-type: none;
+           width:100%;
+           display:flex;
+           transition: background-color 0.13s ease-out;
+           height:5vh;
+           margin:0;
+           padding:0;
+       }
+        
+         #nav-btn-cover ul:hover{
+           background-color: gray;  
+         }
+         li.nav-btn{
+             font-size:1.1em;
+             flex-basis:500px;
+             flex: 1;
+             transition: background-color 0.13s ease-out;
+             display:flex;
+             justify-content: center;
+             align-items: center;
+             transition: background-color 0.13s ease-out,font-weight 0.13s ease-out,transform 0.13s ease-out;
+
+         }
+
+           li.nav-btn:hover{
+               background-color: black;
+               transform: scale(1.1);
+               font-weight: 800;
+           }
+           .nav-btn a{
+            text-decoration: none;
+            color:white;
+            letter-spacing: 0.2vw;
+               
+           }
+    #title{
+        position: absolute;
+        left:45vw;
+        top:20vh;
+        font-family: "good-times";
+        font-size:1.3em;
+        width:40vw;
+    }
+      #motto{
+        position: absolute;
+        left:46vw;
+        top:25vh;
+        width:39vw;
+        font-family: Courier;
+        font-size:1.2em;
+      } 
+  #intro-info{
+      width:80vw;
+      margin:auto;
+      text-align: center;
+      margin-top:30vh;
+  }
+
+    #intro-info-header{
+        font-family: "good-times";
+        font-size:2em;
+        padding-bottom: 1vh;
+    }
+
+     #intro-info-description{
+        padding-bottom: 10vh;
+        font-family: serif;
+        font-size:2em;
+        color:gray;
+        border-bottom: black solid 0.5vw;
+        margin-bottom:3vh;
+     }
+
+     #gallary-cover{
+         width:100%;
+         display:flex;
+         flex-wrap: wrap;
+         gap: 0.2vw;
+
+     }
+
+      #gallary-cover img{
+        width:30%;
+        flex:1;
+        position: relative;
+        transition: transform 0.13s ease-out;
+      }
+
+        #gallary-cover img:hover{
+            transform: scale(1.1);
+        }
+
+  #benifits-section{
+      margin: auto;
+      margin-top:15vh;
+      width:90vw;
+      padding: 10vh 5vw;  
+      background: black;
+  }
+
+    #benifits-list{
+        margin:auto;
+        width:60vw;
+        padding: 0 10vw;
+        display:flex;
+        flex-wrap: wrap;
+        column-gap:130px;
+        row-gap: 150px;
+        justify-content: stretch;
+    }
+    
+    #benifits-list div{
+        flex-basis: 500px;
+    }
+
+  #benifits-section p{
+      font-family: "good-times";
+      font-size:30px;
+      color:white;
+      display:inline;
+      
+  }
+   
+    .benifit-icon{
+        width:100px;
+        height:100px;
+        position: relative;
+        top:4.6vh;
+        margin-right:10px;
+
+    }
+
+
+ #payment-section{
+     width:75vw;
+     margin:20vh auto auto auto; 
+ }
+    #payment-section h3{
+        text-align: center;
+        padding-bottom: 3vh;
+        margin:auto;
+        width:50%;
+        margin-bottom: 7vh;
+        font-size:calc(35px + 1vw);
+        letter-spacing: 0.5vw;
+        border-bottom: black solid 5px;
+    }
+ 
+
+    #payment-section label{
+        display:block;
+        width:40%;
+        height:5%;
+        position: relative;
+        margin: auto;
+        font-size:calc(16px + 1vw);
+        font-weight: 300;
+        margin-bottom: calc(60px + 1vh);
+
+    }
+        label sup{
+            color:red;
+        }
+    #payment-section input{
+        position: absolute;
+        right:10px;
+        width:calc(200px + 3vw);
+        height: calc(20px + 1.6vh);
+        border-radius: 20%;
+        outline: none;
+        border: none;
+    }
+
+    #payment-section input[type="submit"]{
+        position: static;
+        display: block;
+        margin: 1vh auto 15vh auto;
+       width:40%;
+       height: calc(30px + 1.6vh);
+       color:white;
+       font-size:22px;
+       font-weight: 800;
+       letter-spacing: 0.4vw;
+       background: rgb(179, 2, 2);
+       border: none; outline: none;
+    }
+
+     #payment-section input[type="submit"]:hover{
+         background: rgb(110, 1, 1);
+         cursor: pointer;
+     }
+
+    #payment-method-list{
+
+        width:40%;
+        margin:2vh auto;
+    }
+
+    #payment-method-list img{
+      width:50px;
+      height:50px;
+      padding:5px 20px;
+      margin-left:20px;
+      border:black solid 2px;
+      background: white;
+
+    }
+    #payment-method-list img:hover{
+        border: rgb(0, 238, 0) solid 2px;
+    }
+    #payment-method-list img:active{
+        border: rgb(2, 153, 2) solid 2px;
+    }
+
+    footer{
+        margin-top: calc(50px + 4vh);
+        width:100vw;
+        height: fit-content;
+        padding:1vh;
+        text-align: center;
+        background-image: linear-gradient(to bottom,black,  rgba(0, 0, 0, 0.479)),url("images/footer-background.jpg");
+        background-position: 50% 50%;
+        background-size: cover;
+        font-size: (16px + 4vw);
+        color:white;
+        position: static;
+    }
+     
+      footer p{
+          margin-top:calc(30px + 1vh);
+          font-size: calc(13px + 1vw);
+          font-family: Courier;
+          font-weight: 800;
+      }
+
+      footer p a{
+          display:block;
+        margin: calc(120px + 1vh) auto;
+        padding: calc(5px + 0.5vw);
+        font-family: Courier;
+        font-weight: 600;
+        width: fit-content;
+        border: 0.1vw solid white;
+        text-decoration: none;
+        color:inherit;
+        transition: background-color 0.13s ease-out;
+      }
+
+        footer p a:hover{
+            border: none;
+            background-color:rgb(156, 4, 4);
+        }
+
+      #social-media-links{
+          width: fit-content;
+          margin: calc(100px + 8vh) auto;
+          height: fit-content;
+        
+      }
+        #social-media-links ul{
+            width: 100%;
+            height:100%;
+            padding: calc(5px + 0.3vh);
+            border-radius: 10px;
+
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 130px;
+            row-gap: 50px;
+            flex-direction: row;
+            justify-content: flex-end;
+            list-style-type: none;
+        }
+         
+        #social-media-links ul a{
+            position: relative;
+            text-decoration: none;
+        }
+       .social-media-btn{
+           width: calc(30px + 2vw);
+           height: calc(30px + 2vw);
+       }
+       
+        
+        .social-media-btn:hover{
+            transform: scale(1.1);
+            background-color: white;
+        }
+        
+    
+
+         .social-media-description{
+             position: relative;
+             bottom:calc((30px + 2vw) / 3);
+             margin-left: 0.3vw;
+             text-decoration: none;
+             color:white;
+             font-family: "good-times";
+            font-size: calc(5px + 1vw);
+         }
+/*----------MEDIA Queries ----------------*/
+ /* TABLETS || 1350px */
+  @media screen and (max-width: 1350px ) {
+     header {
+         height: 100vh;
+         background:transparent;
+     }
+
+       #header-main-div{
+           background-image:linear-gradient(to bottom,black , transparent,black),url("https://l.top4top.io/p_2197v4ev17.jpg");
+           background-size: 675px 540px;
+           background-position: 0 50%;
+           width:100%;
+           height:100%;
+           clip-path: none;
+       }
+
+       #title{
+           clear: both;
+           position: relative;
+           width:fit-content;
+           font-size: calc(7px + 1.5vw);
+           margin: calc(30px + 1vh) calc(11vw);
+       }
+       #motto{
+        position: relative;
+        width:fit-content;
+        font-size: calc(7px + 1.5vw);
+        top:calc(120px + 6vh); 
+        left:58vw ;
+       }
+
+       #nav-btn-cover{
+           position: relative;
+           width:calc(500px + 1vw);
+           top: 70px;
+           margin-left: calc(95% - (500px + 1vw));
+       }
+
+        li.nav-btn{
+            font-size: calc(7px + 1vw);
+        }
+       #logo-home-btn{
+           width: calc(40px + 0.9vw);
+           height: calc(40px + 0.9vw);
+       } 
+       #logo-home-btn img{
+           width: 100%;
+           height: 100%;
+       }
+    
+       #payment-section input{
+           display:block;
+           position: static;
+       } 
+
+         #payment-section input::placeholder{
+             font-weight: 800;
+             font-family: Courier ;
+             font-size:calc(6px + 1vw);
+         }
+
+         
+      footer p a{
+      background: rgb(150,0,0);
+      border-radius: 10px;
+      border:none
+    }
+    #social-media-links ul{
+    flex-direction: column;
+    }
+
+    img.social-media-btn::after{
+        content: "Facebook";
+        color:white;
+    }
+  }
+
+ /*------------------*/
+
+ /* MBOILES || 1000px */
+ @media  screen and (max-width: 1000px) {
+    header{
+    width: 100vw;
+    }
+    #header-main-div{
+        background-image: linear-gradient(to bottom, black, transparent 30%, black),url("images/hand-with-watch.jpg");
+        background-size: cover;    
+        background-position: 50% 50%;
+        position: relative;
+    }
+      #logo-home-btn{
+          width: calc(20px + 4vw);
+          height: calc(20px + 4vw);
+          margin: calc(50px + 22vh) 0 0 calc(50% - ((50px + 2vw)));
+      }
+      #big-logo{
+          display:none;
+      }
+     #nav-btn-cover{
+        position: absolute;
+        top:40px;
+        width: 80vw;
+        left: 5vw;
+        margin: 0;
+      }
+
+       #nav-btn-cover ul li{
+           font-size: calc(10px + 1vw)
+       }
+      #title{
+          position: absolute;
+          font-size: calc(10px + 2vw);
+          margin:0;
+          width: 80vw;
+          left:10vw;
+          top: 45%;
+          text-align: center;
+      }
+      #motto{
+          position: absolute;
+          width: 80%;
+          top:55%;
+          left:10%;
+          text-align: center;
+          font-size: calc(10px + 1vh);
+      }
+      #benifits-list{
+          width: 90%;
+      }
+      #benifits-list div p{
+          font-size: calc(10px + 1vw);
+      }
+
+       .benifit-icon{
+           width: calc(50px + 3vw);
+           height: calc(50px + 3vw);
+           top: 4.3vh;
+       }
+
+       #payment-section{
+           width: 80%;
+       }
+         
+
+         #payment-section h3{
+             width: 100%;
+         }
+
+         #payment-section form{
+             display: flex;
+             flex-wrap: wrap;
+         }
+
+           #payment-section form label{
+               flex-basis: 40%;
+               width: 0;
+           }
+
+          #payment-method-list{
+              padding:0 0;
+              width: 80%;
+              margin: 2vh 10%;
+          }
+
+          #payment-section input[type="submit"]{
+              width:60%;
+              margin-left: 20%; margin-right: 20%;
+          }
+
+
+          footer p{
+              font-size: 2.5vw; 
+          }
+            footer p a{
+                font-size: 4vw;
+            }
+ }
+ @media screen and (max-width: 550px) {
+     
+    #payment-section form{
+        display: block;
+        width: 60%;
+        margin: 0;
+    }
+
+      #payment-section form label{
+        width:50%;
+        display:block;
+        margin-left:15%;
+        position: static;
+
+      }
+
+      
+ }
+
+ /*-------------------*/
+
+ 
+/*----------------------------------------*/
